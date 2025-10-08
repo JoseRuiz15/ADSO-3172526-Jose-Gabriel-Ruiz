@@ -1,0 +1,16 @@
+/**
+	*Primer array
+	*Autor: Gabriel Ruiz
+	*Fecha: 2025-09-29
+*/
+
+
+
+let primerArray = [1,2,3,4,5];
+console.log("Primer Array");
+console.log(primerArray);
+primerArray.push(6);
+
+console.log("Array después del push");
+console.log(primerArray);
+

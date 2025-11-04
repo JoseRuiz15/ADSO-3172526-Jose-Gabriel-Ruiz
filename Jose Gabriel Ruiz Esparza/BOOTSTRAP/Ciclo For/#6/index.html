@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuerza en Plano Inclinado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <form id="planoForm" class="mb-4 shadow p-4 bg-white rounded">
+      <h1 class="text-center mb-4">Simulación en un Plano Inclinado</h1>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Masa del objeto (kg):</label>
+        <input type="number" id="masa" class="form-control" min="0" step="any" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Angulo inicial (°):</label>
+        <input type="number" id="anguloInicial" class="form-control" min="0" max="90" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Angulo final (°):</label>
+        <input type="number" id="anguloFinal" class="form-control" min="0" max="90" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label fw-bold">Incremento por paso (°):</label>
+        <input type="number" id="incremento" class="form-control" min="1" max="90" required value="5">
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Calcular Fuerzas</button>
+    </form>
+
+    <div id="resultados" class="mt-4 fw-bold text-center"></div>
+  </div>
+
+  <script src="./js/plano.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

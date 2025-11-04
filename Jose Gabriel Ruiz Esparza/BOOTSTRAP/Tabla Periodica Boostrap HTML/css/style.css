@@ -1,0 +1,57 @@
+.tittle{
+    text-align: center;
+    font-size: 100px;
+    margin-top: 50px;
+    font-family: 'Bebas Neue';
+}
+
+/*adfadgadg*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(18, 100px);
+    gap: 5px;
+    grid-auto-rows: 100px;
+    justify-content: center;
+    margin-top: 100px;
+    
+}
+
+
+.no-metales{
+    background-color: #FF8000;
+}
+
+.gases-nobles{
+    background-color: #06402B;
+}
+
+.halogenos{
+    background-color: #009929;
+}
+
+.metales-alcalinos{
+    background-color: #081A41;
+}
+
+.alcalinoterreos{
+    background-color: #E5B301;
+}
+
+.metaloides{
+    background-color: #FA003F;
+}
+
+.metales-de-transicion{
+    background-color: #90D5FF;
+}
+.otros-metales{
+    background-color: #6600A1;
+}
+
+.lantanidos{
+    background-color: #D8EC8F;
+}
+
+.actinidos{
+    background-color: #B4D3B2;
+}

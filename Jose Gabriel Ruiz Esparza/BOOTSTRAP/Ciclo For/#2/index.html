@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificación de la Primera Ley de Newton</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="container mt-5">
+
+    <!-- Formulario principal -->
+    <form id="fuerzaForm" class="mb-4 shadow p-4 bg-white rounded">
+      <h1 class="text-center mb-4">Verificación de la Primera Ley de Newton</h1>
+
+      <div class="mb-3">
+        <label for="cantidad" class="form-label fw-bold">Cantidad de fuerzas a evaluar:</label>
+        <input type="number" id="cantidad" class="form-control" min="1" required placeholder="Ejemplo: 3">
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Generar campos</button>
+    </form>
+
+    <!-- Contenedor donde se generarán los inputs dinámicamente -->
+    <div id="inputsContainer" class="mb-4"></div>
+
+    <!-- Botón para evaluar las fuerzas -->
+    <div id="evaluarContainer" class="text-center mb-4"></div>
+
+    <!-- Resultados -->
+    <div id="resultados" class="mt-4 fw-bold text-center fs-5"></div>
+  </div>
+
+  <script src="./js/verificacion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

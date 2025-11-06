@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bingo</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="bingo-card">
+    <div class="bingo-title mb-3">BINGO</div>
+
+    <!-- Letras -->
+    <div class="bingo-grid mb-2">
+      <div class="bingo-letter">B</div>
+      <div class="bingo-letter">I</div>
+      <div class="bingo-letter">N</div>
+      <div class="bingo-letter">G</div>
+      <div class="bingo-letter">O</div>
+    </div>
+
+    <!-- Cuadrícula 5x5 -->
+    <div class="bingo-grid">
+      <!-- 25 celdas vacías -->
+      <div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div>
+      <div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div>
+      <div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div>
+      <div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div>
+      <div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div><div class="bingo-cell"></div>
+    </div>
+
+    <!-- Botones -->
+    <div class="mt-5">
+      <button class="btn btn-primary btn-bingo">L</button>
+      <button class="btn btn-success btn-bingo">J</button>
+      <button class="btn btn-warning btn-bingo text-dark">I</button>
+      <button class="btn btn-danger btn-bingo">X</button>
+    </div>
+
+    <div class="bottom-label mt-4">BINGO</div>
+  </div>
+
+  <script src="./js/bingo.js"></script>
+</body>
+</html>
